@@ -5,32 +5,32 @@ import {
     Component} from '@angular/core';
 @Component({
     moduleId: module.id,
-    selector: 'contacto',
+    selector: 'contact',
     template: `
 <div class="contact">
     <div class="input-form">
-        <label>De</label>
+        <label>From</label>
         <br>
         <input>
     </div>
     <div class="input-form">
-        <label>Título</label>  
+        <label>Title</label>  
         <br>
         <input>
     </div>
     <div class="input-form">
-        <label>Mensaje</label>  
+        <label>Message</label>  
         <br>
         <textarea rows="10"></textarea>
     </div>
-    <a class="btn-send" href="#">Enviar</a>
+    <a class="btn-send" href="#">Send</a>
 </div>
 `,
-    styleUrls: ['./contacto.component.css']
+    styleUrls: ['./contact.component.css']
 
 
 })
-export class ContactoComponent {
+export class ContactComponent {
 
 }
 

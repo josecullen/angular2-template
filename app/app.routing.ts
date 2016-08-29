@@ -3,35 +3,30 @@
  */
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ConstitucionComponent} from './constitucion/constitucion.component'
-import { ContactoComponent} from './contacto/contacto.component'
-import { InicioComponent} from './inicio/inicio.component'
-import { NosotrosComponent} from './nosotros/nosotros.component'
-import { ForoComponent} from './foro/foro.component'
+import { ContactComponent} from './contact/contact.component'
+import { HomeComponent} from './home/home.component'
+import { UsComponent} from './us/us.component'
+import { ForumComponent} from './forum/forum.component'
 
 const appRoutes: Routes = [
     {
-        path: 'inicio',
-        component: InicioComponent
+        path: 'home',
+        component: HomeComponent
     },
     {
-        path: 'foro',
-        component: ForoComponent
+        path: 'forum',
+        component: ForumComponent
     },
     {
-        path: 'contacto',
-        component: ContactoComponent
+        path: 'contact',
+        component: ContactComponent
     },
     {
-        path: 'constitucion',
-        component: ConstitucionComponent
-    },
-    {
-        path: 'nosotros',
-        component: NosotrosComponent
+        path: 'us',
+        component: UsComponent
     },{
         path: '',
-        redirectTo: '/inicio',
+        redirectTo: '/home',
         pathMatch: 'full'
 
     }

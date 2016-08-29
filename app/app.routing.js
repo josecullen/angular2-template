@@ -1,33 +1,28 @@
 "use strict";
 var router_1 = require('@angular/router');
-var constitucion_component_1 = require('./constitucion/constitucion.component');
-var contacto_component_1 = require('./contacto/contacto.component');
-var inicio_component_1 = require('./inicio/inicio.component');
-var nosotros_component_1 = require('./nosotros/nosotros.component');
-var foro_component_1 = require('./foro/foro.component');
+var contact_component_1 = require('./contact/contact.component');
+var home_component_1 = require('./home/home.component');
+var us_component_1 = require('./us/us.component');
+var forum_component_1 = require('./forum/forum.component');
 var appRoutes = [
     {
-        path: 'inicio',
-        component: inicio_component_1.InicioComponent
+        path: 'home',
+        component: home_component_1.HomeComponent
     },
     {
-        path: 'foro',
-        component: foro_component_1.ForoComponent
+        path: 'forum',
+        component: forum_component_1.ForumComponent
     },
     {
-        path: 'contacto',
-        component: contacto_component_1.ContactoComponent
+        path: 'contact',
+        component: contact_component_1.ContactComponent
     },
     {
-        path: 'constitucion',
-        component: constitucion_component_1.ConstitucionComponent
-    },
-    {
-        path: 'nosotros',
-        component: nosotros_component_1.NosotrosComponent
+        path: 'us',
+        component: us_component_1.UsComponent
     }, {
         path: '',
-        redirectTo: '/inicio',
+        redirectTo: '/home',
         pathMatch: 'full'
     }
 ];

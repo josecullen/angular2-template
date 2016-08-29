@@ -7,12 +7,12 @@ import {
     moduleId: module.id,
     selector: 'foro',
     template: `
-    foro
+    forum . . .
 `,
 
 
 })
-export class ForoComponent {
+export class ForumComponent {
 
 }
 

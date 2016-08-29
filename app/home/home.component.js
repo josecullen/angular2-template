@@ -12,19 +12,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by josecullen on 28/08/16.
  */
 var core_1 = require('@angular/core');
-var ContactoComponent = (function () {
-    function ContactoComponent() {
+var HomeComponent = (function () {
+    function HomeComponent() {
     }
-    ContactoComponent = __decorate([
+    HomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'contacto',
-            template: "\n<div class=\"contact\">\n    <div class=\"input-form\">\n        <label>De</label>\n        <br>\n        <input>\n    </div>\n    <div class=\"input-form\">\n        <label>T\u00EDtulo</label>  \n        <br>\n        <input>\n    </div>\n    <div class=\"input-form\">\n        <label>Mensaje</label>  \n        <br>\n        <textarea rows=\"10\"></textarea>\n    </div>\n    <a class=\"btn-send\" href=\"#\">Enviar</a>\n</div>\n",
-            styleUrls: ['./contacto.component.css']
+            selector: 'inicio',
+            template: "\n<div class=\"init\">\n    \n    <div class=\"content\">\n        <p>\n        Welcome page\n        </p>\n    </div>\n</div>\n",
+            styleUrls: ['./home.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], ContactoComponent);
-    return ContactoComponent;
+    ], HomeComponent);
+    return HomeComponent;
 }());
-exports.ContactoComponent = ContactoComponent;
-//# sourceMappingURL=contacto.component.js.map
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.component.js.map

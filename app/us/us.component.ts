@@ -21,10 +21,10 @@ import {
    
    
 `,
-    styleUrls: ['./nosotros.component.css']
+    styleUrls: ['./us.component.css']
 
 })
-export class NosotrosComponent {
+export class UsComponent {
 
     members:Array<Member> = new Array();
 

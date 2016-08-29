@@ -12,9 +12,9 @@ import {
     <div @pageStatus="pageStatus" class="splash">
         <main>
             <div class="title-box">
-                <h2 class="pre-title">Los</h2>
-                <h1 class="title">constituyentes</h1>
-                <h2 class="post-title">el portal</h2>
+                <h2 class="pre-title">welcome to</h2>
+                <h1 class="title">My App</h1>
+                <h2 class="post-title">portal</h2>
                 <br>            
             </div>        
         </main>
@@ -25,14 +25,13 @@ import {
     
     <div class="page">
         <div class="left-side">
-            <a class="menu-title">Constituyentes</a>
+            <a class="menu-title">My App</a>
         </div>
         <div class="right-side">
-            <a class="link" routerLink="/contacto">Contacto</a>
-            <a class="link" routerLink="/nosotros">Nosotros</a>
-            <a class="link" routerLink="/constitucion">La constitución</a>
-            <a class="link" routerLink="/foro">Foro</a>
-            <a class="link" routerLink="/inicio">Inicio</a>
+            <a class="link" routerLink="/contact">Contact</a>
+            <a class="link" routerLink="/us">Us</a>            
+            <a class="link" routerLink="/forum">Forum</a>
+            <a class="link" routerLink="/home">Home</a>
         </div>
         
         <div class="content">

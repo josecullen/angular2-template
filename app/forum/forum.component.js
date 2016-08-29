@@ -12,18 +12,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by josecullen on 28/08/16.
  */
 var core_1 = require('@angular/core');
-var ConstitucionComponent = (function () {
-    function ConstitucionComponent() {
+var ForumComponent = (function () {
+    function ForumComponent() {
     }
-    ConstitucionComponent = __decorate([
+    ForumComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'constitucion',
-            template: "\n    constitucion\n",
+            selector: 'foro',
+            template: "\n    forum . . .\n",
         }), 
         __metadata('design:paramtypes', [])
-    ], ConstitucionComponent);
-    return ConstitucionComponent;
+    ], ForumComponent);
+    return ForumComponent;
 }());
-exports.ConstitucionComponent = ConstitucionComponent;
-//# sourceMappingURL=constitucion.component.js.map
+exports.ForumComponent = ForumComponent;
+//# sourceMappingURL=forum.component.js.map
