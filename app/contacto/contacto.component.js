@@ -12,21 +12,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by josecullen on 28/08/16.
  */
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_routing_1 = require('./app.routing');
-var app_component_1 = require('./app.component');
-var AppModule = (function () {
-    function AppModule() {
+var ContactoComponent = (function () {
+    function ContactoComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+    ContactoComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'contacto',
+            template: "\n<div class=\"contact\">\n    <div class=\"input-form\">\n        <label>De</label>\n        <br>\n        <input>\n    </div>\n    <div class=\"input-form\">\n        <label>T\u00EDtulo</label>  \n        <br>\n        <input>\n    </div>\n    <div class=\"input-form\">\n        <label>Mensaje</label>  \n        <br>\n        <textarea rows=\"10\"></textarea>\n    </div>\n    <a class=\"btn-send\" href=\"#\">Enviar</a>\n</div>\n",
+            styleUrls: ['./contacto.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], ContactoComponent);
+    return ContactoComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.ContactoComponent = ContactoComponent;
+//# sourceMappingURL=contacto.component.js.map

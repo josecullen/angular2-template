@@ -11,11 +11,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.pageStatus = 'splash';
     }
+    AppComponent.prototype.togglePageStatus = function () {
+        this.pageStatus = this.pageStatus === 'splash' ? 'page' : 'splash';
+    };
     AppComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
+            template: "    \n    <div @pageStatus=\"pageStatus\" class=\"splash\">\n        <main>\n            <div class=\"title-box\">\n                <h2 class=\"pre-title\">Los</h2>\n                <h1 class=\"title\">constituyentes</h1>\n                <h2 class=\"post-title\">el portal</h2>\n                <br>            \n            </div>        \n        </main>\n        <footer>\n            <a class=\"btn-enter\" (click)=\"togglePageStatus()\">Entrar</a>\n        </footer>\n    </div>    \n    \n    <div class=\"page\">\n        <div class=\"left-side\">\n            <a class=\"menu-title\">Constituyentes</a>\n        </div>\n        <div class=\"right-side\">\n            <a class=\"link\" routerLink=\"/contacto\">Contacto</a>\n            <a class=\"link\" routerLink=\"/nosotros\">Nosotros</a>\n            <a class=\"link\" routerLink=\"/constitucion\">La constituci\u00F3n</a>\n            <a class=\"link\" routerLink=\"/foro\">Foro</a>\n            <a class=\"link\" routerLink=\"/inicio\">Inicio</a>\n        </div>\n        \n        <div class=\"content\">\n           <router-outlet></router-outlet>            \n        </div>\n        \n    </div>\n    \n",
+            animations: [
+                core_1.trigger('pageStatus', [
+                    core_1.state('splash', core_1.style({})),
+                    core_1.state('page', core_1.style({
+                        transform: 'translateY(-100%)'
+                    })),
+                    core_1.transition('splash <=> page', core_1.animate('500ms ease-in'))
+                ])
+            ],
+            styleUrls: ['./app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

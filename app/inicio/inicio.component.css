@@ -1,0 +1,9 @@
+div.init {
+    margin: 20px;
+    min-height: 250px;
+    text-align: left;
+}
+
+div.content{
+    padding-top: 10px;
+}

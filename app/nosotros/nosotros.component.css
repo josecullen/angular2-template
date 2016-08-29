@@ -1,0 +1,48 @@
+div.us{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    margin: 10px;
+    color: #1a2c51;
+}
+
+.team-member{
+    padding: 15px;
+    min-height: 130px;
+}
+
+.team-member h1{
+    font-size: 18px;
+}
+
+.team-member img{
+    max-width: 100px;
+}
+
+.team-member-img{
+    padding: 10px;
+    height: 100px;
+    /*width: 20%;*/
+    display: inline-block;
+    /*background-color: #00AA00;*/
+    float: left;
+}
+
+.team-member-info{
+    height: 100px;
+    /*width: 80%;*/
+
+    /*background-color: #1a2c51;*/
+    display: inline-block;
+    /*float: right;*/
+}
+
+@media screen and (max-width: 720px) {
+    .team-member img{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .team-member-img {
+        display: block;
+        max-height: 50px;
+    }
+}

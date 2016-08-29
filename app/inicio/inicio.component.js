@@ -12,21 +12,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by josecullen on 28/08/16.
  */
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_routing_1 = require('./app.routing');
-var app_component_1 = require('./app.component');
-var AppModule = (function () {
-    function AppModule() {
+var InicioComponent = (function () {
+    function InicioComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+    InicioComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'inicio',
+            template: "\n<div class=\"init\">\n    \n    <div class=\"content\">\n        <p>\n        Bienvenido a la p\u00E1gina de los constituyentes para toda la gente. \n        Esta p\u00E1gina pretende ser un portal en el que podamos comunicarnos, aprender y compartir sobre los temas relativos a la constituci\u00F3n.\n        \n        </p>\n    </div>\n</div>\n",
+            styleUrls: ['./inicio.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], InicioComponent);
+    return InicioComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.InicioComponent = InicioComponent;
+//# sourceMappingURL=inicio.component.js.map
