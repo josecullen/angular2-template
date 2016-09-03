@@ -9,7 +9,7 @@ import {
     moduleId: module.id,
     selector: 'my-app',
     template: `    
-    <div @pageStatus="pageStatus" class="splash">
+    <div [@pageStatus]="pageStatus" class="splash">
         <main>
             <div class="title-box">
                 <h2 class="pre-title">welcome to</h2>
